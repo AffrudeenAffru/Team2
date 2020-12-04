@@ -1,0 +1,28 @@
+<app-body>
+
+</app-body>
+
+<div class="container"><br>
+    <button type="button" class="btn btn-info btn-lg btn-block" >Add dongle plans</button>
+    <form #adduserform="ngForm" (ngSubmit)="addDongleformsubmit()">
+     <!-- //   {{dongle | json}} -->
+        <div class="form-group">
+            <label for="id"> <b> Id:</b>  </label>
+            <input type="text" class="form-control" required [(ngModel)]="dongle.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="emailId"> <b>Plan:</b> </label>
+            <input type="text" class="form-control" required [(ngModel)]="dongle.emailId" name="emailId">
+        </div>
+        <div class="form-group">
+            <label for="userName"><b>Validity: </b></label>
+            <input type="text" class="form-control" required [(ngModel)]="dongle.userName" name="userName">
+        </div>
+        <div class="form-group">
+        <label for="password"><b>Price: </b></label>
+        <input type="text" class="form-control" required [(ngModel)]="dongle.password" name="password">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>&nbsp;
+    <button type="button" class="btn btn-primary" (click)="gotolistdongle()">Back</button>
+    </form>
+</div>

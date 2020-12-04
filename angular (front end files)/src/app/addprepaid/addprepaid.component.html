@@ -1,0 +1,28 @@
+<app-body>
+
+</app-body>
+
+<div class="container"><br>
+    <button type="button" class="btn btn-primary btn-lg btn-block" >Add prepaid plans</button>
+    <form #adduserform="ngForm" (ngSubmit)="addPrepaidformsubmit()">
+     <!-- //   {{prepaid | json}} -->
+        <div class="form-group">
+            <label for="id"><b>Id:</b></label>
+            <input type="text" class="form-control" required [(ngModel)]="prepaid.id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="emailId"><b>Plan:</b></label>
+            <input type="text" class="form-control" required [(ngModel)]="prepaid.emailId" name="emailId">
+        </div>
+        <div class="form-group">
+            <label for="userName"><b>Validity:</b></label>
+            <input type="text" class="form-control" required [(ngModel)]="prepaid.userName" name="userName">
+        </div>
+        <div class="form-group">
+        <label for="password"><b>Price</b></label>
+        <input type="text" class="form-control" required [(ngModel)]="prepaid.password" name="password">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>&nbsp;
+    <button type="button" class="btn btn-primary" (click)="gotolistprepaid()">Back</button>
+    </form>
+</div>

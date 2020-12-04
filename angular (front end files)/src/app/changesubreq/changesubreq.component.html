@@ -1,0 +1,46 @@
+<app-body>
+
+</app-body>
+
+
+<div class="container"><br>
+  <button type="button" class="btn btn-info btn-lg btn-block"  ><b> Change subscription request </b></button>
+    <!-- <p>Admin action to perform crud operations</p>             --><br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <tr>
+            <th>Id</th>
+          <th>EmailId</th>
+          <th>UserName</th>
+          <th>Password</th>
+           <th>MobileNum</th>
+           <th>Current type </th>
+          <th>Change req to</th>
+       
+     
+        </tr>
+
+       
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of _prepaidtopostpaid">
+        <!-- <tr *ngFor="let product of _productlist"> -->
+          <td>{{product.id}}</td>
+          <td>{{product.emailId}}</td>
+          <td>{{product.userName}}</td>
+          <td>{{product.password}}</td>
+          <td>{{product.mobileNum}}</td>
+          <td>{{product.typeOfSubscriber}}</td>
+          <td>{{product.prepaidtopostpaid}}</td>
+          
+    
+          
+        </tr>    
+      </tbody>
+ 
+    </table>
+    
+  </div>
+  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

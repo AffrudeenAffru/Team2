@@ -1,0 +1,35 @@
+.container{
+    /* margin-top: 5%; */
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+  .map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+    .bg{
+        /* background-color :#55efc4; 
+        background-image :linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);*/
+        width:100%;  
+        background-size: 100%;
+        background-image: url(../../assets/images/log3.jpg);
+    }
